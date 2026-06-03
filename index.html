@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>קניות בסופר משפחת שרון</title>
+  <meta name="theme-color" content="#0f68d8" />
+  <style>
+    :root{--blue:#0f68d8;--blue2:#084da8;--sky:#eaf4ff;--card:#ffffff;--text:#102033;--muted:#667085;--line:#d8e7fb;--green:#18a058;--danger:#e03131;--shadow:0 18px 45px rgba(15,104,216,.16);}
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,'Segoe UI',sans-serif;background:linear-gradient(180deg,#dcebff 0,#f7fbff 26%,#eef6ff 100%);color:var(--text);min-height:100vh} button,input,textarea,select{font-family:inherit}
+    .app{max-width:980px;margin:0 auto;padding:18px 14px 90px}.hero{background:linear-gradient(135deg,var(--blue),#28a5ff);color:white;border-radius:28px;padding:20px 18px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero:before{content:"";position:absolute;left:-40px;top:-55px;width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.17)}.hero h1{margin:0;font-size:30px;line-height:1.15}.hero p{margin:10px 0 0;opacity:.92}.pillrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.pill{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:8px 12px;border-radius:999px;font-size:14px}.toolbar{position:sticky;top:0;z-index:10;padding:12px 0 8px;background:linear-gradient(180deg,#eef7ff 78%,rgba(238,247,255,0));}.search{display:flex;align-items:center;gap:10px;background:white;border:1px solid var(--line);box-shadow:0 8px 24px rgba(16,32,51,.08);border-radius:18px;padding:12px 14px}.search input{border:0;outline:0;font-size:16px;width:100%;background:transparent}.tabs{display:flex;gap:8px;overflow:auto;padding:12px 2px 4px}.tab{border:0;background:white;color:var(--blue2);box-shadow:0 6px 18px rgba(16,32,51,.08);border-radius:999px;padding:10px 14px;font-weight:700;white-space:nowrap}.tab.active{background:var(--blue);color:white}.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin-top:8px}.panel{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:24px;box-shadow:0 10px 28px rgba(16,32,51,.08);padding:16px}.panel h2{margin:0 0 12px;font-size:22px}.items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.item{background:white;border:1px solid var(--line);border-radius:18px;padding:12px;display:flex;flex-direction:column;gap:8px;min-height:102px}.item b{font-size:15px}.cat{font-size:12px;color:var(--muted)}.add{border:0;background:linear-gradient(135deg,var(--blue),#20a1ff);color:white;border-radius:14px;padding:10px;font-weight:800}.list{display:flex;flex-direction:column;gap:10px}.cartItem{background:#f8fbff;border:1px solid var(--line);border-radius:18px;padding:12px}.cartTop{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}.cartItem b{font-size:16px}.meta{color:var(--muted);font-size:13px;margin-top:5px}.bought{border:0;background:var(--green);color:white;border-radius:12px;padding:9px 12px;font-weight:800}.empty{text-align:center;color:var(--muted);padding:28px 8px;background:#f8fbff;border-radius:18px}.modal{position:fixed;inset:0;background:rgba(7,25,51,.45);display:none;align-items:flex-end;z-index:50}.modal.show{display:flex}.sheet{background:white;width:100%;max-width:520px;margin:0 auto;border-radius:28px 28px 0 0;padding:20px;box-shadow:0 -15px 45px rgba(0,0,0,.2)}.sheet h3{margin:0 0 14px;font-size:23px}.field{margin:10px 0}.field label{display:block;font-weight:700;margin-bottom:6px}.field input,.field textarea{width:100%;border:1px solid var(--line);border-radius:14px;padding:12px;font-size:16px}.actions{display:flex;gap:8px;margin-top:14px}.primary{flex:1;border:0;background:var(--blue);color:white;border-radius:14px;padding:13px;font-weight:900}.secondary{border:0;background:#edf5ff;color:var(--blue2);border-radius:14px;padding:13px;font-weight:800}.fab{position:fixed;right:18px;bottom:18px;background:linear-gradient(135deg,var(--blue),#18a8ff);color:white;border:0;border-radius:20px;padding:14px 18px;font-weight:900;box-shadow:0 14px 35px rgba(15,104,216,.35)}.manual{margin-top:12px;display:grid;grid-template-columns:1fr auto;gap:8px}.manual input{border:1px solid var(--line);border-radius:14px;padding:12px;font-size:15px}.manual button{border:0;background:#0b5ec8;color:white;border-radius:14px;padding:0 14px;font-weight:800}
+    @media(max-width:760px){.app{padding:12px 10px 86px}.hero{border-radius:24px;padding:22px 16px}.hero h1{font-size:27px}.grid{grid-template-columns:1fr}.items{grid-template-columns:1fr}.panel{padding:14px}.cartPanel{order:-1}.fab{left:18px;right:18px;border-radius:18px}.toolbar{top:0}.tabs{padding-bottom:8px}}
+  </style>
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <h1>🛒 קניות בסופר<br>משפחת שרון</h1>
+      <p>מוסיפים מצרכים בבית, מסמנים נקנה בסופר, והרשימה נשארת מסודרת.</p>
+      <div class="pillrow"><span class="pill" id="countPill">0 פריטים ממתינים לקנייה</span></div>
+    </section>
+    <div class="toolbar">
+      <div class="search"><span>🔎</span><input id="search" placeholder="חיפוש מוצר... למשל חלב, עגבניות, סבון" /></div>
+      <div class="tabs" id="tabs"></div>
+    </div>
+    <section class="grid">
+      <aside class="panel cartPanel"><h2>הרשימה שלנו</h2><div id="cart" class="list"></div><div class="manual"><input id="manualName" placeholder="מוצר שלא קיים במאגר"/><button id="manualBtn">הוסף</button></div></aside>
+      <section class="panel"><h2>מאגר מוצרים</h2><div id="items" class="items"></div></section>
+    </section>
+  </main>
+  <button class="fab" onclick="window.scrollTo({top:0,behavior:'smooth'})">חזרה לחיפוש ↑</button>
+  <div class="modal" id="modal"><div class="sheet"><h3 id="modalTitle"></h3><div class="field"><label>כמות</label><input id="qty" placeholder="לדוגמה: 2, קילו, 500 גרם" /></div><div class="field"><label>הערה</label><textarea id="note" rows="3" placeholder="לדוגמה: רק אם יש מבצע / ללא סוכר"></textarea></div><div class="actions"><button class="primary" id="confirmAdd">הוסף לרשימה</button><button class="secondary" id="cancel">ביטול</button></div></div></div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyCCGIZbEKErFDYW4sG0Y9cxeqdCCVVJvYk",
+      authDomain: "sharon-shopping.firebaseapp.com",
+      databaseURL: "https://sharon-shopping-default-rtdb.firebaseio.com",
+      projectId: "sharon-shopping",
+      storageBucket: "sharon-shopping.firebasestorage.app",
+      messagingSenderId: "1098330533612",
+      appId: "1:1098330533612:web:f9572eb99702f2f60b7fc9",
+      measurementId: "G-8V1XGMZ7SM"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+    const cartRef = db.ref('shopping/cart');
+    const customProductsRef = db.ref('shopping/customProducts');
+
+    const defaultProducts = [
+      ['גבינה צהובה 500 גרם','מוצרי חלב'],['קוטג\' 5%','מוצרי חלב'],['גבינה לבנה','מוצרי חלב'],['יוגורט עם פרי / חלבון','מוצרי חלב'],['חמאה','מוצרי חלב'],['מרגרינה','מוצרי חלב'],['גבינת פטה / בולגרית 200 ג','מוצרי חלב'],['פרמזן מגורדת','מוצרי חלב'],['כדורי מוצרלה','מוצרי חלב'],['שמנת צמחית','מוצרי חלב'],['שמנת מתוקה','מוצרי חלב'],['שמנת לבישול','מוצרי חלב'],['סויה לבישול','מוצרי חלב'],['חלב רגיל','מוצרי חלב'],['חלב סויה','מוצרי חלב'],['חלב שיבולת','מוצרי חלב'],['ביצים לארג\'','מוצרי חלב'],
+      ['פיתות כוסמין','לחמים וקמחים'],['באגט','לחמים וקמחים'],['פריכיות אורז','לחמים וקמחים'],['קמח לבן','לחמים וקמחים'],['קמח לבן מנופה','לחמים וקמחים'],['קמח תופח','לחמים וקמחים'],['קמח תירס','לחמים וקמחים'],['קמח 00 / קמח פיצה','לחמים וקמחים'],['קרוטונים גדולים','לחמים וקמחים'],
+      ['טחינה גולמית','יבשים ושימורים'],['טונה בשמן','יבשים ושימורים'],['אורז פרסי','יבשים ושימורים'],['אורז בסמטי/תאילנדי','יבשים ושימורים'],['רסק עגבניות בקבוק','יבשים ושימורים'],['רסק עגבניות ריבועים','יבשים ושימורים'],['פסטה','יבשים ושימורים'],['דפי אורז','יבשים ושימורים'],['שימורי תירס','יבשים ושימורים'],['פתיתים','יבשים ושימורים'],
+      ['מיונז','רטבים ותבלינים'],['קטשופ','רטבים ותבלינים'],['חרדל','רטבים ותבלינים'],['סומסום','רטבים ותבלינים'],['סוכרזית','רטבים ותבלינים'],['סוכר חום בהיר','רטבים ותבלינים'],['קקאו איכותי','רטבים ותבלינים'],['קפה שחור','רטבים ותבלינים'],['קפה טסטר צויס','רטבים ותבלינים'],['ממרח ארטישוק','רטבים ותבלינים'],['ממרח פסטו','רטבים ותבלינים'],['פירורי לחם','רטבים ותבלינים'],['תבלין על האש','רטבים ותבלינים'],['סילאן','רטבים ותבלינים'],['פלפל שחור','רטבים ותבלינים'],['טריאקי','רטבים ותבלינים'],['רוטב סויה','רטבים ותבלינים'],['צ\'ילי מתוק','רטבים ותבלינים'],['בלסמי מצומצם','רטבים ותבלינים'],['שמן זית','רטבים ותבלינים'],['שמן קנולה','רטבים ותבלינים'],['שמן זית ספריי','רטבים ותבלינים'],['סודה לשתייה','רטבים ותבלינים'],['אבקת אפייה','רטבים ותבלינים'],['סוכר וניל','רטבים ותבלינים'],['סוכר','רטבים ותבלינים'],
+      ['טופו','בשר דגים וקפואים'],['סטייקים','בשר דגים וקפואים'],['חזה עוף פרוס לשניצלים','בשר דגים וקפואים'],['פרגיות','בשר דגים וקפואים'],['בשר טחון קילו','בשר דגים וקפואים'],['סלמון','בשר דגים וקפואים'],['ירקות קפואים','בשר דגים וקפואים'],['גלידה','בשר דגים וקפואים'],['גלידוניות פרווה','בשר דגים וקפואים'],
+      ['נוטלה','מתוקים ושתייה'],['בירות','מתוקים ושתייה'],['יין לבן','מתוקים ושתייה'],['שוקולד צ\'יפס מריר','מתוקים ושתייה'],['שוקולד קוביות מריר','מתוקים ושתייה'],['כריות','מתוקים ושתייה'],['שיבולת שועל','מתוקים ושתייה'],['בפלות שוקולד','מתוקים ושתייה'],['חמאת בוטנים טבעית','מתוקים ושתייה'],['סודה לימון','מתוקים ושתייה'],['סוכריות','מתוקים ושתייה'],['אגוז ברזיל','מתוקים ושתייה'],['מסטיק ענבים','מתוקים ושתייה'],['תה','מתוקים ושתייה'],['גרעיני דלעת','מתוקים ושתייה'],['זרעי צ\'יה','מתוקים ושתייה'],
+      ['תפוח ירוק','ירקות ופירות'],['אפרסק','ירקות ופירות'],['פלפל אדום','ירקות ופירות'],['פלפל צהוב','ירקות ופירות'],['פלפל כתום','ירקות ופירות'],['עגבניות','ירקות ופירות'],['עגבניות שרי','ירקות ופירות'],['מלפפון','ירקות ופירות'],['אבוקדו','ירקות ופירות'],['חסה לבבות','ירקות ופירות'],['חסה ערבית','ירקות ופירות'],['חסה קיסר','ירקות ופירות'],['בצל לבן','ירקות ופירות'],['בצל סגול','ירקות ופירות'],['תפו\'א','ירקות ופירות'],['בטטה','ירקות ופירות'],['בננות','ירקות ופירות'],['לימון','ירקות ופירות'],['שום','ירקות ופירות'],['פטרוזיליה','ירקות ופירות'],['בזיליקום','ירקות ופירות'],['עלי טימין','ירקות ופירות'],['עלי זעתר','ירקות ופירות'],['נענע','ירקות ופירות'],['כרובית','ירקות ופירות'],['קישוא','ירקות ופירות'],['גזר','ירקות ופירות'],['כרישה','ירקות ופירות'],['כרוב לבן','ירקות ופירות'],['אבטיח','ירקות ופירות'],['חציל','ירקות ופירות'],['חבילת תמרים גדולה','ירקות ופירות'],['פטריות פורטבלו גדולות','ירקות ופירות'],['פטריות שמפיניון','ירקות ופירות'],['פטריות ארוכות','ירקות ופירות'],['קלח תירס לבן','ירקות ופירות'],
+      ['סבון ידיים','קליר וניקיון'],['נייר טואלט','קליר וניקיון'],['נייר סופג','קליר וניקיון'],['נייר אלומיניום גדול','קליר וניקיון'],['שקיות זבל גדולות','קליר וניקיון'],['שקיות זבל קטנות','קליר וניקיון'],['סבון כלים','קליר וניקיון'],['מגבונים','קליר וניקיון'],['משחת שיניים פארדונטקס','קליר וניקיון'],['משחת שיניים מלבינה','קליר וניקיון'],['מברשת שיניים רגילה','קליר וניקיון'],['ראש מברשת חשמלית','קליר וניקיון'],['דורדוראנט','קליר וניקיון'],['סבון גוף גבר','קליר וניקיון'],['מרכך הוואי כחול','קליר וניקיון'],['שמפו הד אנד שולדרס','קליר וניקיון'],['מטליות לרצפה','קליר וניקיון'],['מטליות כמו מגבונים 400 יח\'','קליר וניקיון'],['ריחן לאסלה','קליר וניקיון'],['קיסמים לשיניים','קליר וניקיון'],['מקלות אוזניים מעץ','קליר וניקיון'],['נייר אפייה','קליר וניקיון'],['נוזל לסתימות','קליר וניקיון'],['מסיר שומנים','קליר וניקיון'],['אבקת כביסה','קליר וניקיון'],['מרכך כביסה','קליר וניקיון'],['קרם גוף','קליר וניקיון'],['מסיר לק','קליר וניקיון'],['חוט דנטלי','קליר וניקיון'],['אבקה מקציפה לאסלה','קליר וניקיון'],['קצף ניקוי עם אקונומיקה','קליר וניקיון'],['מטליות מיקרופייבר למטבח','קליר וניקיון'],['מנקה לשון','קליר וניקיון'],['כפפות סיליקון','קליר וניקיון'],['סקוצ לשטיפת כלים','קליר וניקיון'],['שקיות אוכל','קליר וניקיון']
+    ];
+
+    let customProducts = [];
+    let products = [...defaultProducts];
+    let cats = ['הכל', ...new Set(products.map(p => p[1]))];
+    let active = 'הכל';
+    let selected = null;
+    let cart = [];
+
+    const $ = id => document.getElementById(id);
+    const esc = s => String(s || '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+
+    function rebuildProducts() {
+      products = [...defaultProducts, ...customProducts];
+      cats = ['הכל', ...new Set(products.map(p => p[1]))];
+      if (!cats.includes(active)) active = 'הכל';
+      renderTabs();
+      renderItems();
+    }
+
+    function persistProduct(name, cat) {
+      const clean = name.trim();
+      if (!clean) return;
+      if (products.some(p => p[0] === clean)) return;
+      customProductsRef.push({ name: clean, category: cat || 'אחר', createdAt: Date.now() });
+    }
+
+    function addToCart(item) {
+      const existing = cart.find(x => x.name === item.name && !x.note);
+      if (existing && !item.note) {
+        existing.qty = item.qty || existing.qty || '';
+        cartRef.child(existing.id).update({ qty: existing.qty, updatedAt: Date.now() });
+      } else {
+        cartRef.push(item);
+      }
+    }
+
+    function renderTabs() {
+      $('tabs').innerHTML = cats.map(c => `<button class="tab ${c === active ? 'active' : ''}" onclick="active='${esc(c)}';renderTabs();renderItems()">${esc(c)}</button>`).join('');
+    }
+
+    function renderItems() {
+      const q = $('search').value.trim();
+      const list = products.filter(p => (active === 'הכל' || p[1] === active) && (!q || p[0].includes(q) || p[1].includes(q)));
+      $('items').innerHTML = list.map(p => `<div class="item"><b>${esc(p[0])}</b><span class="cat">${esc(p[1])}</span><button class="add" onclick="openAdd('${String(p[0]).replaceAll("\\","\\\\").replaceAll("'","\\'")}')">+ הוסף</button></div>`).join('') || '<div class="empty">לא נמצאו מוצרים</div>';
+    }
+
+    function renderCart() {
+      $('countPill').textContent = cart.length + ' פריטים ממתינים לקנייה';
+      $('cart').innerHTML = cart.length ? cart.map((x) => `<div class="cartItem"><div class="cartTop"><div><b>${esc(x.name)}</b><div class="meta">${esc(x.qty || 'ללא כמות')}${x.note ? ' · ' + esc(x.note) : ''}</div></div><button class="bought" onclick="markBought('${x.id}')">נקנה</button></div></div>`).join('') : '<div class="empty">אין כרגע פריטים לקנייה</div>';
+    }
+
+    function openAdd(name) {
+      selected = name;
+      $('modalTitle').textContent = name;
+      $('qty').value = '';
+      $('note').value = '';
+      $('modal').classList.add('show');
+      setTimeout(() => $('qty').focus(), 100);
+    }
+
+    function markBought(id) {
+      cartRef.child(id).remove();
+    }
+
+    $('confirmAdd').onclick = () => {
+      addToCart({
+        name: selected,
+        qty: $('qty').value.trim(),
+        note: $('note').value.trim(),
+        createdAt: Date.now()
+      });
+      $('modal').classList.remove('show');
+    };
+
+    $('cancel').onclick = () => $('modal').classList.remove('show');
+    $('modal').onclick = e => { if (e.target.id === 'modal') $('modal').classList.remove('show'); };
+    $('search').oninput = renderItems;
+
+    $('manualBtn').onclick = () => {
+      const n = $('manualName').value.trim();
+      if (n) {
+        const cat = active === 'הכל' ? 'אחר' : active;
+        persistProduct(n, cat);
+        openAdd(n);
+        $('manualName').value = '';
+      }
+    };
+
+    customProductsRef.on('value', snap => {
+      const val = snap.val() || {};
+      customProducts = Object.values(val).map(x => [x.name, x.category || 'אחר']);
+      rebuildProducts();
+    });
+
+    cartRef.on('value', snap => {
+      const val = snap.val() || {};
+      cart = Object.entries(val).map(([id, x]) => ({ id, ...x })).sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+      renderCart();
+    });
+
+    renderTabs();
+    renderItems();
+    renderCart();
+  </script>
+
+</body>
+</html>

@@ -8,7 +8,7 @@
   <style>
     :root{--blue:#0f68d8;--blue2:#084da8;--sky:#eaf4ff;--card:#ffffff;--text:#102033;--muted:#667085;--line:#d8e7fb;--green:#18a058;--danger:#e03131;--shadow:0 18px 45px rgba(15,104,216,.16);}
     *{box-sizing:border-box} body{margin:0;font-family:Arial,'Segoe UI',sans-serif;background:linear-gradient(180deg,#dcebff 0,#f7fbff 26%,#eef6ff 100%);color:var(--text);min-height:100vh} button,input,textarea,select{font-family:inherit}
-    .app{max-width:980px;margin:0 auto;padding:18px 14px 90px}.hero{background:linear-gradient(135deg,var(--blue),#28a5ff);color:white;border-radius:28px;padding:20px 18px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero:before{content:"";position:absolute;left:-40px;top:-55px;width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.17)}.hero h1{margin:0;font-size:30px;line-height:1.15}.hero p{margin:10px 0 0;opacity:.92}.pillrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.pill{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:8px 12px;border-radius:999px;font-size:14px}.toolbar{position:sticky;top:0;z-index:10;padding:12px 0 8px;background:linear-gradient(180deg,#eef7ff 78%,rgba(238,247,255,0));}.search{display:flex;align-items:center;gap:10px;background:white;border:1px solid var(--line);box-shadow:0 8px 24px rgba(16,32,51,.08);border-radius:18px;padding:12px 14px}.search input{border:0;outline:0;font-size:16px;width:100%;background:transparent}.tabs{display:flex;gap:8px;overflow:auto;padding:12px 2px 4px}.tab{border:0;background:white;color:var(--blue2);box-shadow:0 6px 18px rgba(16,32,51,.08);border-radius:999px;padding:10px 14px;font-weight:700;white-space:nowrap}.tab.active{background:var(--blue);color:white}.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin-top:8px}.panel{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:24px;box-shadow:0 10px 28px rgba(16,32,51,.08);padding:16px}.panel h2{margin:0 0 12px;font-size:22px}.items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.item{background:white;border:1px solid var(--line);border-radius:18px;padding:12px;display:flex;flex-direction:column;gap:8px;min-height:102px}.item b{font-size:15px}.cat{font-size:12px;color:var(--muted)}.add{border:0;background:linear-gradient(135deg,var(--blue),#20a1ff);color:white;border-radius:14px;padding:10px;font-weight:800}.list{display:flex;flex-direction:column;gap:10px}.cartItem{background:#f8fbff;border:1px solid var(--line);border-radius:18px;padding:12px}.cartTop{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}.cartItem b{font-size:16px}.meta{color:var(--muted);font-size:13px;margin-top:5px}.bought{border:0;background:var(--green);color:white;border-radius:12px;padding:9px 12px;font-weight:800}.empty{text-align:center;color:var(--muted);padding:28px 8px;background:#f8fbff;border-radius:18px}.modal{position:fixed;inset:0;background:rgba(7,25,51,.45);display:none;align-items:flex-end;z-index:50}.modal.show{display:flex}.sheet{background:white;width:100%;max-width:520px;margin:0 auto;border-radius:28px 28px 0 0;padding:20px;box-shadow:0 -15px 45px rgba(0,0,0,.2)}.sheet h3{margin:0 0 14px;font-size:23px}.field{margin:10px 0}.field label{display:block;font-weight:700;margin-bottom:6px}.field input,.field textarea{width:100%;border:1px solid var(--line);border-radius:14px;padding:12px;font-size:16px}.actions{display:flex;gap:8px;margin-top:14px}.primary{flex:1;border:0;background:var(--blue);color:white;border-radius:14px;padding:13px;font-weight:900}.secondary{border:0;background:#edf5ff;color:var(--blue2);border-radius:14px;padding:13px;font-weight:800}.fab{position:fixed;right:18px;bottom:18px;background:linear-gradient(135deg,var(--blue),#18a8ff);color:white;border:0;border-radius:20px;padding:14px 18px;font-weight:900;box-shadow:0 14px 35px rgba(15,104,216,.35)}.manual{margin-top:12px;display:grid;grid-template-columns:1fr auto;gap:8px}.manual input{border:1px solid var(--line);border-radius:14px;padding:12px;font-size:15px}.manual button{border:0;background:#0b5ec8;color:white;border-radius:14px;padding:0 14px;font-weight:800}
+    .app{max-width:980px;margin:0 auto;padding:18px 14px 90px}.hero{background:linear-gradient(135deg,var(--blue),#28a5ff);color:white;border-radius:28px;padding:20px 18px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero:before{content:"";position:absolute;left:-40px;top:-55px;width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.17)}.hero h1{margin:0;font-size:30px;line-height:1.15}.hero p{margin:10px 0 0;opacity:.92}.pillrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.pill{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:8px 12px;border-radius:999px;font-size:14px}.toolbar{position:sticky;top:0;z-index:10;padding:12px 0 8px;background:linear-gradient(180deg,#eef7ff 78%,rgba(238,247,255,0));}.search{display:flex;align-items:center;gap:10px;background:white;border:1px solid var(--line);box-shadow:0 8px 24px rgba(16,32,51,.08);border-radius:18px;padding:12px 14px}.search input{border:0;outline:0;font-size:16px;width:100%;background:transparent}.tabs{display:flex;gap:8px;overflow:auto;padding:12px 2px 4px}.tab{border:0;background:white;color:var(--blue2);box-shadow:0 6px 18px rgba(16,32,51,.08);border-radius:999px;padding:10px 14px;font-weight:700;white-space:nowrap}.tab.active{background:var(--blue);color:white}.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin-top:8px}.panel{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:24px;box-shadow:0 10px 28px rgba(16,32,51,.08);padding:16px}.panel h2{margin:0 0 12px;font-size:22px}.items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.item{background:white;border:1px solid var(--line);border-radius:18px;padding:12px;display:flex;flex-direction:column;gap:8px;min-height:102px}.item b{font-size:15px}.cat{font-size:12px;color:var(--muted)}.add{border:0;background:linear-gradient(135deg,var(--blue),#20a1ff);color:white;border-radius:14px;padding:10px;font-weight:800}.list{display:flex;flex-direction:column;gap:10px}.groupTitle{font-size:18px;font-weight:900;color:var(--blue2);margin:14px 4px 8px;padding-bottom:6px;border-bottom:2px solid var(--line)}.groupTitle small{font-size:13px;color:var(--muted);font-weight:700}.itemsGroup{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:16px}@media(max-width:760px){.itemsGroup{grid-template-columns:1fr}}.cartItem{background:#f8fbff;border:1px solid var(--line);border-radius:18px;padding:12px}.cartTop{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}.cartItem b{font-size:16px}.meta{color:var(--muted);font-size:13px;margin-top:5px}.bought{border:0;background:var(--green);color:white;border-radius:12px;padding:9px 12px;font-weight:800}.empty{text-align:center;color:var(--muted);padding:28px 8px;background:#f8fbff;border-radius:18px}.modal{position:fixed;inset:0;background:rgba(7,25,51,.45);display:none;align-items:flex-end;z-index:50}.modal.show{display:flex}.sheet{background:white;width:100%;max-width:520px;margin:0 auto;border-radius:28px 28px 0 0;padding:20px;box-shadow:0 -15px 45px rgba(0,0,0,.2)}.sheet h3{margin:0 0 14px;font-size:23px}.field{margin:10px 0}.field label{display:block;font-weight:700;margin-bottom:6px}.field input,.field textarea{width:100%;border:1px solid var(--line);border-radius:14px;padding:12px;font-size:16px}.actions{display:flex;gap:8px;margin-top:14px}.primary{flex:1;border:0;background:var(--blue);color:white;border-radius:14px;padding:13px;font-weight:900}.secondary{border:0;background:#edf5ff;color:var(--blue2);border-radius:14px;padding:13px;font-weight:800}.fab{position:fixed;right:18px;bottom:18px;background:linear-gradient(135deg,var(--blue),#18a8ff);color:white;border:0;border-radius:20px;padding:14px 18px;font-weight:900;box-shadow:0 14px 35px rgba(15,104,216,.35)}.manual{margin-top:12px;display:grid;grid-template-columns:1fr auto;gap:8px}.manual input{border:1px solid var(--line);border-radius:14px;padding:12px;font-size:15px}.manual button{border:0;background:#0b5ec8;color:white;border-radius:14px;padding:0 14px;font-weight:800}
     @media(max-width:760px){.app{padding:12px 10px 86px}.hero{border-radius:24px;padding:22px 16px}.hero h1{font-size:27px}.grid{grid-template-columns:1fr}.items{grid-template-columns:1fr}.panel{padding:14px}.cartPanel{order:-1}.fab{left:18px;right:18px;border-radius:18px}.toolbar{top:0}.tabs{padding-bottom:8px}}
   </style>
 </head>
@@ -61,22 +61,44 @@
       ['סבון ידיים','קליר וניקיון'],['נייר טואלט','קליר וניקיון'],['נייר סופג','קליר וניקיון'],['נייר אלומיניום גדול','קליר וניקיון'],['שקיות זבל גדולות','קליר וניקיון'],['שקיות זבל קטנות','קליר וניקיון'],['סבון כלים','קליר וניקיון'],['מגבונים','קליר וניקיון'],['משחת שיניים פארדונטקס','קליר וניקיון'],['משחת שיניים מלבינה','קליר וניקיון'],['מברשת שיניים רגילה','קליר וניקיון'],['ראש מברשת חשמלית','קליר וניקיון'],['דורדוראנט','קליר וניקיון'],['סבון גוף גבר','קליר וניקיון'],['מרכך הוואי כחול','קליר וניקיון'],['שמפו הד אנד שולדרס','קליר וניקיון'],['מטליות לרצפה','קליר וניקיון'],['מטליות כמו מגבונים 400 יח\'','קליר וניקיון'],['ריחן לאסלה','קליר וניקיון'],['קיסמים לשיניים','קליר וניקיון'],['מקלות אוזניים מעץ','קליר וניקיון'],['נייר אפייה','קליר וניקיון'],['נוזל לסתימות','קליר וניקיון'],['מסיר שומנים','קליר וניקיון'],['אבקת כביסה','קליר וניקיון'],['מרכך כביסה','קליר וניקיון'],['קרם גוף','קליר וניקיון'],['מסיר לק','קליר וניקיון'],['חוט דנטלי','קליר וניקיון'],['אבקה מקציפה לאסלה','קליר וניקיון'],['קצף ניקוי עם אקונומיקה','קליר וניקיון'],['מטליות מיקרופייבר למטבח','קליר וניקיון'],['מנקה לשון','קליר וניקיון'],['כפפות סיליקון','קליר וניקיון'],['סקוצ לשטיפת כלים','קליר וניקיון'],['שקיות אוכל','קליר וניקיון']
     ];
 
+    const categoryOrder = ['מוצרי חלב','בשר דגים וקפואים','מתוקים ושתייה','יבשים ושימורים','לחמים וקמחים','רטבים ותבלינים','ירקות ופירות','קליר וניקיון','אחר'];
+    const hebrewSorter = new Intl.Collator('he');
+    const $ = id => document.getElementById(id);
+
     let customProducts = [];
-    let products = [...defaultProducts];
-    let cats = ['הכל', ...new Set(products.map(p => p[1]))];
+    let products = [];
+    let cats = [];
     let active = 'הכל';
     let selected = null;
     let cart = [];
+    let visibleProducts = [];
 
-    const $ = id => document.getElementById(id);
-    const esc = s => String(s || '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+    function categoryIndex(cat) {
+      const i = categoryOrder.indexOf(cat || 'אחר');
+      return i === -1 ? 999 : i;
+    }
+
+    function productCategory(name) {
+      const p = products.find(x => x[0] === name);
+      return p ? p[1] : 'אחר';
+    }
+
+    function sortProducts(arr) {
+      return [...arr].sort((a,b) => categoryIndex(a[1]) - categoryIndex(b[1]) || hebrewSorter.compare(a[0], b[0]));
+    }
+
+    function sortCart(arr) {
+      return [...arr].sort((a,b) => categoryIndex(productCategory(a.name)) - categoryIndex(productCategory(b.name)) || hebrewSorter.compare(a.name, b.name));
+    }
 
     function rebuildProducts() {
-      products = [...defaultProducts, ...customProducts];
-      cats = ['הכל', ...new Set(products.map(p => p[1]))];
+      products = sortProducts([...defaultProducts, ...customProducts]);
+      const existing = [...new Set(products.map(p => p[1]))];
+      cats = ['הכל', ...categoryOrder.filter(c => existing.includes(c)), ...existing.filter(c => !categoryOrder.includes(c)).sort(hebrewSorter.compare)];
       if (!cats.includes(active)) active = 'הכל';
       renderTabs();
       renderItems();
+      renderCart();
     }
 
     function persistProduct(name, cat) {
@@ -86,29 +108,85 @@
       customProductsRef.push({ name: clean, category: cat || 'אחר', createdAt: Date.now() });
     }
 
-    function addToCart(item) {
-      const existing = cart.find(x => x.name === item.name && !x.note);
-      if (existing && !item.note) {
-        existing.qty = item.qty || existing.qty || '';
-        cartRef.child(existing.id).update({ qty: existing.qty, updatedAt: Date.now() });
-      } else {
-        cartRef.push(item);
-      }
+    function renderTabs() {
+      $('tabs').innerHTML = cats.map(c => `<button class="tab ${c===active?'active':''}" data-cat="${c}">${c}</button>`).join('');
+      document.querySelectorAll('.tab').forEach(btn => {
+        btn.onclick = () => {
+          active = btn.dataset.cat;
+          renderTabs();
+          renderItems();
+        };
+      });
     }
 
-    function renderTabs() {
-      $('tabs').innerHTML = cats.map(c => `<button class="tab ${c === active ? 'active' : ''}" onclick="active='${esc(c)}';renderTabs();renderItems()">${esc(c)}</button>`).join('');
+    function itemCard(p, idx) {
+      return `<div class="item"><b>${p[0]}</b><span class="cat">${p[1]}</span><button class="add" data-idx="${idx}">+ הוסף</button></div>`;
+    }
+
+    function bindAddButtons() {
+      document.querySelectorAll('.add[data-idx]').forEach(btn => {
+        btn.onclick = () => {
+          const product = visibleProducts[Number(btn.dataset.idx)];
+          if (product) openAdd(product[0]);
+        };
+      });
     }
 
     function renderItems() {
       const q = $('search').value.trim();
-      const list = products.filter(p => (active === 'הכל' || p[1] === active) && (!q || p[0].includes(q) || p[1].includes(q)));
-      $('items').innerHTML = list.map(p => `<div class="item"><b>${esc(p[0])}</b><span class="cat">${esc(p[1])}</span><button class="add" onclick="openAdd('${String(p[0]).replaceAll("\\","\\\\").replaceAll("'","\\'")}')">+ הוסף</button></div>`).join('') || '<div class="empty">לא נמצאו מוצרים</div>';
+      const list = sortProducts(products.filter(p => (active === 'הכל' || p[1] === active) && (!q || p[0].includes(q) || p[1].includes(q))));
+      visibleProducts = list;
+
+      if (!list.length) {
+        $('items').innerHTML = '<div class="empty">לא נמצאו מוצרים</div>';
+        return;
+      }
+
+      if (active !== 'הכל') {
+        $('items').innerHTML = list.map((p, idx) => itemCard(p, idx)).join('');
+        bindAddButtons();
+        return;
+      }
+
+      let html = '';
+      cats.filter(c => c !== 'הכל').forEach(c => {
+        const group = list.filter(p => p[1] === c);
+        if (!group.length) return;
+        html += `<div class="groupTitle">${c} <small>(${group.length})</small></div><div class="itemsGroup">`;
+        group.forEach(p => {
+          const idx = visibleProducts.indexOf(p);
+          html += itemCard(p, idx);
+        });
+        html += '</div>';
+      });
+      $('items').innerHTML = html;
+      bindAddButtons();
     }
 
     function renderCart() {
       $('countPill').textContent = cart.length + ' פריטים ממתינים לקנייה';
-      $('cart').innerHTML = cart.length ? cart.map((x) => `<div class="cartItem"><div class="cartTop"><div><b>${esc(x.name)}</b><div class="meta">${esc(x.qty || 'ללא כמות')}${x.note ? ' · ' + esc(x.note) : ''}</div></div><button class="bought" onclick="markBought('${x.id}')">נקנה</button></div></div>`).join('') : '<div class="empty">אין כרגע פריטים לקנייה</div>';
+      if (!cart.length) {
+        $('cart').innerHTML = '<div class="empty">אין כרגע פריטים לקנייה</div>';
+        return;
+      }
+
+      const sorted = sortCart(cart);
+      const allCats = [...categoryOrder, ...new Set(sorted.map(x => productCategory(x.name)).filter(c => !categoryOrder.includes(c)))];
+      let html = '';
+
+      allCats.forEach(c => {
+        const group = sorted.filter(x => productCategory(x.name) === c);
+        if (!group.length) return;
+        html += `<div class="groupTitle">${c} <small>(${group.length})</small></div>`;
+        group.forEach(x => {
+          html += `<div class="cartItem"><div class="cartTop"><div><b>${x.name}</b><div class="meta">${x.qty || 'ללא כמות'}${x.note ? ' · ' + x.note : ''}</div></div><button class="bought" data-id="${x.id}">נקנה</button></div></div>`;
+        });
+      });
+
+      $('cart').innerHTML = html;
+      document.querySelectorAll('.bought[data-id]').forEach(btn => {
+        btn.onclick = () => markBought(btn.dataset.id);
+      });
     }
 
     function openAdd(name) {
@@ -124,7 +202,12 @@
       cartRef.child(id).remove();
     }
 
+    function addToCart(item) {
+      cartRef.push(item);
+    }
+
     $('confirmAdd').onclick = () => {
+      if (!selected) return;
       addToCart({
         name: selected,
         qty: $('qty').value.trim(),
@@ -132,6 +215,7 @@
         createdAt: Date.now()
       });
       $('modal').classList.remove('show');
+      selected = null;
     };
 
     $('cancel').onclick = () => $('modal').classList.remove('show');
@@ -156,13 +240,11 @@
 
     cartRef.on('value', snap => {
       const val = snap.val() || {};
-      cart = Object.entries(val).map(([id, x]) => ({ id, ...x })).sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+      cart = sortCart(Object.entries(val).map(([id, x]) => ({ id, ...x })));
       renderCart();
     });
 
-    renderTabs();
-    renderItems();
-    renderCart();
+    rebuildProducts();
   </script>
 
 </body>

@@ -8,8 +8,8 @@
   <style>
     :root{--blue:#0f68d8;--blue2:#084da8;--sky:#eaf4ff;--card:#ffffff;--text:#102033;--muted:#667085;--line:#d8e7fb;--green:#18a058;--danger:#e03131;--shadow:0 18px 45px rgba(15,104,216,.16);}
     *{box-sizing:border-box} body{margin:0;font-family:Arial,'Segoe UI',sans-serif;background:linear-gradient(180deg,#dcebff 0,#f7fbff 26%,#eef6ff 100%);color:var(--text);min-height:100vh} button,input,textarea,select{font-family:inherit}
-    .app{max-width:980px;margin:0 auto;padding:18px 14px 90px}.hero{background:linear-gradient(135deg,var(--blue),#28a5ff);color:white;border-radius:28px;padding:20px 18px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero:before{content:"";position:absolute;left:-40px;top:-55px;width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.17)}.hero h1{margin:0;font-size:30px;line-height:1.15}.hero p{margin:10px 0 0;opacity:.92}.pillrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.pill{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:8px 12px;border-radius:999px;font-size:14px}.toolbar{position:sticky;top:0;z-index:10;padding:12px 0 8px;background:linear-gradient(180deg,#eef7ff 78%,rgba(238,247,255,0));}.search{display:flex;align-items:center;gap:10px;background:white;border:1px solid var(--line);box-shadow:0 8px 24px rgba(16,32,51,.08);border-radius:18px;padding:12px 14px}.search input{border:0;outline:0;font-size:16px;width:100%;background:transparent}.tabs{display:flex;gap:8px;overflow:auto;padding:12px 2px 4px}.tab{border:0;background:white;color:var(--blue2);box-shadow:0 6px 18px rgba(16,32,51,.08);border-radius:999px;padding:10px 14px;font-weight:700;white-space:nowrap}.tab.active{background:var(--blue);color:white}.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin-top:8px}.panel{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:24px;box-shadow:0 10px 28px rgba(16,32,51,.08);padding:16px}.panel h2{margin:0 0 12px;font-size:22px}.items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.item{background:white;border:1px solid var(--line);border-radius:18px;padding:12px;display:flex;flex-direction:column;gap:8px;min-height:102px}.item b{font-size:15px}.cat{font-size:12px;color:var(--muted)}.add{border:0;background:linear-gradient(135deg,var(--blue),#20a1ff);color:white;border-radius:14px;padding:10px;font-weight:800}.list{display:flex;flex-direction:column;gap:10px}.groupTitle{font-size:18px;font-weight:900;color:var(--blue2);margin:14px 4px 8px;padding-bottom:6px;border-bottom:2px solid var(--line)}.groupTitle small{font-size:13px;color:var(--muted);font-weight:700}.itemsGroup{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:16px}@media(max-width:760px){.itemsGroup{grid-template-columns:1fr}}.cartItem{background:#f8fbff;border:1px solid var(--line);border-radius:18px;padding:12px}.cartTop{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}.cartItem b{font-size:16px}.meta{color:var(--muted);font-size:13px;margin-top:5px}.bought{border:0;background:var(--green);color:white;border-radius:12px;padding:9px 12px;font-weight:800}.empty{text-align:center;color:var(--muted);padding:28px 8px;background:#f8fbff;border-radius:18px}.modal{position:fixed;inset:0;background:rgba(7,25,51,.45);display:none;align-items:flex-end;z-index:50}.modal.show{display:flex}.sheet{background:white;width:100%;max-width:520px;margin:0 auto;border-radius:28px 28px 0 0;padding:20px;box-shadow:0 -15px 45px rgba(0,0,0,.2)}.sheet h3{margin:0 0 14px;font-size:23px}.field{margin:10px 0}.field label{display:block;font-weight:700;margin-bottom:6px}.field input,.field textarea{width:100%;border:1px solid var(--line);border-radius:14px;padding:12px;font-size:16px}.actions{display:flex;gap:8px;margin-top:14px}.primary{flex:1;border:0;background:var(--blue);color:white;border-radius:14px;padding:13px;font-weight:900}.secondary{border:0;background:#edf5ff;color:var(--blue2);border-radius:14px;padding:13px;font-weight:800}.fab{position:fixed;right:18px;bottom:18px;background:linear-gradient(135deg,var(--blue),#18a8ff);color:white;border:0;border-radius:20px;padding:14px 18px;font-weight:900;box-shadow:0 14px 35px rgba(15,104,216,.35)}.manual{margin-top:12px;display:grid;grid-template-columns:1fr auto;gap:8px}.manual input{border:1px solid var(--line);border-radius:14px;padding:12px;font-size:15px}.manual button{border:0;background:#0b5ec8;color:white;border-radius:14px;padding:0 14px;font-weight:800}
-    @media(max-width:760px){.app{padding:12px 10px 86px}.hero{border-radius:24px;padding:22px 16px}.hero h1{font-size:27px}.grid{grid-template-columns:1fr}.items{grid-template-columns:1fr}.panel{padding:14px}.cartPanel{order:-1}.fab{left:18px;right:18px;border-radius:18px}.toolbar{top:0}.tabs{padding-bottom:8px}}
+    .app{max-width:980px;margin:0 auto;padding:18px 14px 90px}.hero{background:linear-gradient(135deg,var(--blue),#28a5ff);color:white;border-radius:28px;padding:20px 18px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero:before{content:"";position:absolute;left:-40px;top:-55px;width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.17)}.hero h1{margin:0;font-size:30px;line-height:1.15}.hero p{margin:10px 0 0;opacity:.92}.pillrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.pill{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:8px 12px;border-radius:999px;font-size:14px}.toolbar{position:sticky;top:0;z-index:10;padding:12px 0 8px;background:linear-gradient(180deg,#eef7ff 78%,rgba(238,247,255,0));}.search{display:flex;align-items:center;gap:10px;background:white;border:1px solid var(--line);box-shadow:0 8px 24px rgba(16,32,51,.08);border-radius:18px;padding:12px 14px}.search input{border:0;outline:0;font-size:16px;width:100%;background:transparent}.tabs{display:flex;gap:8px;overflow:auto;padding:12px 2px 4px}.tab{border:0;background:white;color:var(--blue2);box-shadow:0 6px 18px rgba(16,32,51,.08);border-radius:999px;padding:10px 14px;font-weight:700;white-space:nowrap}.tab.active{background:var(--blue);color:white}.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin-top:8px}.panel{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:24px;box-shadow:0 10px 28px rgba(16,32,51,.08);padding:16px}.panel h2{margin:0 0 12px;font-size:22px}.quickAdd{margin-top:12px}.resultsPanel{margin-top:12px}.hide{display:none!important}.sectionHint{color:var(--muted);font-size:13px;margin:-6px 0 12px}.items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.item{background:white;border:1px solid var(--line);border-radius:18px;padding:12px;display:flex;flex-direction:column;gap:8px;min-height:102px}.item b{font-size:15px}.cat{font-size:12px;color:var(--muted)}.add{border:0;background:linear-gradient(135deg,var(--blue),#20a1ff);color:white;border-radius:14px;padding:10px;font-weight:800}.list{display:flex;flex-direction:column;gap:10px}.groupTitle{font-size:18px;font-weight:900;color:var(--blue2);margin:14px 4px 8px;padding-bottom:6px;border-bottom:2px solid var(--line)}.groupTitle small{font-size:13px;color:var(--muted);font-weight:700}.itemsGroup{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:16px}@media(max-width:760px){.itemsGroup{grid-template-columns:1fr}}.cartItem{background:#f8fbff;border:1px solid var(--line);border-radius:18px;padding:12px}.cartTop{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}.cartItem b{font-size:16px}.meta{color:var(--muted);font-size:13px;margin-top:5px}.bought{border:0;background:var(--green);color:white;border-radius:12px;padding:9px 12px;font-weight:800}.empty{text-align:center;color:var(--muted);padding:28px 8px;background:#f8fbff;border-radius:18px}.modal{position:fixed;inset:0;background:rgba(7,25,51,.45);display:none;align-items:flex-end;z-index:50}.modal.show{display:flex}.sheet{background:white;width:100%;max-width:520px;margin:0 auto;border-radius:28px 28px 0 0;padding:20px;box-shadow:0 -15px 45px rgba(0,0,0,.2)}.sheet h3{margin:0 0 14px;font-size:23px}.field{margin:10px 0}.field label{display:block;font-weight:700;margin-bottom:6px}.field input,.field textarea{width:100%;border:1px solid var(--line);border-radius:14px;padding:12px;font-size:16px}.actions{display:flex;gap:8px;margin-top:14px}.primary{flex:1;border:0;background:var(--blue);color:white;border-radius:14px;padding:13px;font-weight:900}.secondary{border:0;background:#edf5ff;color:var(--blue2);border-radius:14px;padding:13px;font-weight:800}.fab{position:fixed;right:18px;bottom:18px;background:linear-gradient(135deg,var(--blue),#18a8ff);color:white;border:0;border-radius:20px;padding:14px 18px;font-weight:900;box-shadow:0 14px 35px rgba(15,104,216,.35)}.manual{margin-top:0;display:grid;grid-template-columns:1fr 160px auto;gap:8px}.manual input,.manual select{border:1px solid var(--line);border-radius:14px;padding:12px;font-size:15px;background:white}.manual button{border:0;background:#0b5ec8;color:white;border-radius:14px;padding:0 14px;font-weight:800}
+    @media(max-width:760px){.manual{grid-template-columns:1fr}.app{padding:12px 10px 86px}.hero{border-radius:24px;padding:22px 16px}.hero h1{font-size:27px}.grid{grid-template-columns:1fr}.items{grid-template-columns:1fr}.panel{padding:14px}.cartPanel{order:-1}.fab{left:18px;right:18px;border-radius:18px}.toolbar{top:0}.tabs{padding-bottom:8px}}
   </style>
 </head>
 <body>
@@ -23,9 +23,24 @@
       <div class="search"><span>🔎</span><input id="search" placeholder="חיפוש מוצר... למשל חלב, עגבניות, סבון" /></div>
       <div class="tabs" id="tabs"></div>
     </div>
+    <section class="panel quickAdd">
+      <h2>הוספת מוצר חדש</h2>
+      <div class="manual">
+        <input id="manualName" placeholder="מוצר שלא קיים במאגר"/>
+        <select id="manualCat"></select>
+        <button id="manualBtn">הוסף</button>
+      </div>
+    </section>
+
+    <section class="panel resultsPanel hide" id="resultsPanel">
+      <h2 id="resultsTitle">תוצאות חיפוש</h2>
+      <div class="sectionHint">התוצאות מופיעות כאן לפני רשימת הקניות כדי שתוכל להוסיף מהר.</div>
+      <div id="items" class="items"></div>
+    </section>
+
     <section class="grid">
-      <aside class="panel cartPanel"><h2>הרשימה שלנו</h2><div id="cart" class="list"></div><div class="manual"><input id="manualName" placeholder="מוצר שלא קיים במאגר"/><button id="manualBtn">הוסף</button></div></aside>
-      <section class="panel"><h2>מאגר מוצרים</h2><div id="items" class="items"></div></section>
+      <aside class="panel cartPanel"><h2>הרשימה שלנו</h2><div id="cart" class="list"></div></aside>
+      <section class="panel"><h2>מאגר מוצרים</h2><div id="catalog" class="items"></div></section>
     </section>
   </main>
   <button class="fab" onclick="window.scrollTo({top:0,behavior:'smooth'})">חזרה לחיפוש ↑</button>
@@ -108,15 +123,25 @@
       customProductsRef.push({ name: clean, category: cat || 'אחר', createdAt: Date.now() });
     }
 
+    function renderManualCategories() {
+      const select = $('manualCat');
+      if (!select) return;
+      const options = cats.filter(c => c !== 'הכל');
+      select.innerHTML = options.map(c => `<option value="${c}">${c}</option>`).join('');
+      if (active !== 'הכל' && options.includes(active)) select.value = active;
+    }
+
     function renderTabs() {
       $('tabs').innerHTML = cats.map(c => `<button class="tab ${c===active?'active':''}" data-cat="${c}">${c}</button>`).join('');
       document.querySelectorAll('.tab').forEach(btn => {
         btn.onclick = () => {
           active = btn.dataset.cat;
           renderTabs();
+          renderManualCategories();
           renderItems();
         };
       });
+      renderManualCategories();
     }
 
     function itemCard(p, idx) {
@@ -134,32 +159,38 @@
 
     function renderItems() {
       const q = $('search').value.trim();
-      const list = sortProducts(products.filter(p => (active === 'הכל' || p[1] === active) && (!q || p[0].includes(q) || p[1].includes(q))));
-      visibleProducts = list;
+      const filtered = sortProducts(products.filter(p => (active === 'הכל' || p[1] === active) && (!q || p[0].includes(q) || p[1].includes(q))));
+      visibleProducts = filtered;
 
-      if (!list.length) {
-        $('items').innerHTML = '<div class="empty">לא נמצאו מוצרים</div>';
-        return;
+      const targetResults = $('items');
+      const targetCatalog = $('catalog');
+      const resultsPanel = $('resultsPanel');
+
+      if (q) {
+        resultsPanel.classList.remove('hide');
+        targetResults.innerHTML = filtered.length ? filtered.map((p, idx) => itemCard(p, idx)).join('') : '<div class="empty">לא נמצאו מוצרים</div>';
+      } else {
+        resultsPanel.classList.add('hide');
+        targetResults.innerHTML = '';
       }
 
       if (active !== 'הכל') {
-        $('items').innerHTML = list.map((p, idx) => itemCard(p, idx)).join('');
-        bindAddButtons();
-        return;
+        targetCatalog.innerHTML = filtered.length ? filtered.map((p, idx) => itemCard(p, idx)).join('') : '<div class="empty">לא נמצאו מוצרים</div>';
+      } else {
+        let html = '';
+        cats.filter(c => c !== 'הכל').forEach(c => {
+          const group = filtered.filter(p => p[1] === c);
+          if (!group.length) return;
+          html += `<div class="groupTitle">${c} <small>(${group.length})</small></div><div class="itemsGroup">`;
+          group.forEach(p => {
+            const idx = visibleProducts.indexOf(p);
+            html += itemCard(p, idx);
+          });
+          html += '</div>';
+        });
+        targetCatalog.innerHTML = html || '<div class="empty">לא נמצאו מוצרים</div>';
       }
 
-      let html = '';
-      cats.filter(c => c !== 'הכל').forEach(c => {
-        const group = list.filter(p => p[1] === c);
-        if (!group.length) return;
-        html += `<div class="groupTitle">${c} <small>(${group.length})</small></div><div class="itemsGroup">`;
-        group.forEach(p => {
-          const idx = visibleProducts.indexOf(p);
-          html += itemCard(p, idx);
-        });
-        html += '</div>';
-      });
-      $('items').innerHTML = html;
       bindAddButtons();
     }
 
@@ -225,7 +256,7 @@
     $('manualBtn').onclick = () => {
       const n = $('manualName').value.trim();
       if (n) {
-        const cat = active === 'הכל' ? 'אחר' : active;
+        const cat = $('manualCat').value || (active === 'הכל' ? 'אחר' : active);
         persistProduct(n, cat);
         openAdd(n);
         $('manualName').value = '';
